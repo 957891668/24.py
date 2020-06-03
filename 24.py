@@ -8,7 +8,7 @@ num = 0
 def fapai():
     for i in range(8):
         print("\r正在发牌."+'.'*(i%4)+'   ',end = "")
-        time.sleep(0.4)
+        time.sleep(0.3)
     hand.append(random.randint(1,13))
     print("\r您的牌为：",hand[-1])
 
@@ -27,4 +27,3 @@ for i in hand:
 print("\n您的牌点为：",num)
 if num >24:
     print("您输了")
-
